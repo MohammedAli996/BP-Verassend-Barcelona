@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Nunito+Sans:ital,wght@0,400;1,200&family=Raleway:ital,wght@0,400;0,500;1,600&family=Roboto:wght@100&family=Tiro+Bangla&display=swap');
+/*---- css variable ----*/
+:root{
+    --text-black-900: #000000;
+    --text-active-900: #c8493e;
+
+}
+body{
+    background-color: var(--skin-color-body);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* navigation menu */
+
+.navbar{
+    background-color: var(--skin-color-nav-footer);
+    padding: 0 15px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.navbar .dropdown-content{
+    text-align: right;
+    padding: 15px;
+}
+.navbar .dropdown-content a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-black-900);
+    padding: 5px 30px;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+}
+.navbar .dropdown-content a.active{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-active-900);
+}
+
+/* Footer */
+
+.footercapsule {
+    width: 100%;
+    height: 220px;
+    background: var(--skin-color-nav-footer);
+    margin-top: 50px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.textfooter {
+    padding-top: 30px;
+    padding-left: 1px;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+}
+.fietsenhuren {
+    display: inline-block;
+}
+.textfooter .fietsen-soort li {
+    font-family: 'Tiro Bangla', serif;
+    margin-left: 16px;
+    text-transform: capitalize;
+}
+.textfooter .Contact-footer {
+    text-decoration: none;
+    color: var(--text-black-900);
+    
+}
+.textfooter .Contact-footer li {
+    font-family: 'Tiro Bangla', serif;
+    margin-left: 16px;
+    text-transform: capitalize;
+}
+.social-links{
+    display: inline-block;
+    margin-top:75px;
+    text-align: center;
+}
+.social-links .fa {
+    line-height: 60px;
+}
+.footercapsule .social-links a{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+.footercapsule .social-links a i{
+    line-height: 50px;
+    color: #000000;
+}
