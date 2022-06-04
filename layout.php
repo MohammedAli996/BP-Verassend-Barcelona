@@ -5,17 +5,23 @@ class PageLayout
     {
         echo "
             <nav class='navbar'>
-                <div class='logonav'>
+                <div class='logo'>
                     <img src=''>
                 </div>
-                <div class='dropdown-content'>
-                    <a href='#' class='active'>Home</a>
-                    <a 'href=''>Reserveren</a>
-                    <a href=''>Informatie</a>
-                    <a href=''>Prijzen</a>
-                    <a href='' >Log in</a>
+                <ul class='dropdown-content'>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>Reserveren</a></li>
+                    <li><a href='#'>Informatie</a></li>
+                    <li><a href='#'>Prijzen</a></li>
+                    <li><a href='#' >Log in</a></li>
+                </ul>
+                <div class='burger'>
+                    <div class='line1'></div>
+                    <div class='line2'></div>
+                    <div class='line3'></div>
                 </div>
             </nav>
+            <script src='./JS/app.js'></script>
         ";
     }
     public function getNavbarFoot()
