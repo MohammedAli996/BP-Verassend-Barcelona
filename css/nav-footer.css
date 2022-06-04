@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Nunito+Sans:ital,wght@0,400;1,200&family=Raleway:ital,wght@0,400;0,500;1,600&family=Roboto:wght@100&family=Tiro+Bangla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
 /*---- css variable ----*/
 :root{
     --text-black-900: #000000;
@@ -10,100 +11,104 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
 body{
     background-color: var(--skin-color-body);
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     
 }
-
-/* navigation menu */
-
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    font-family: 'Raleway', sans-serif;
-    background-color: var(--skin-color-nav-footer);
-}
-.navbar .dropdown-content{
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-}
-.navbar .dropdown-content li{
+li {
     list-style: none;
 }
-.navbar .dropdown-content a{
-    color: var(--text-black-900);
+
+a {
     text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
 }
-.burger {
+/* navigation menu */
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: var(--skin-color-nav-footer);
+}
+.dropdown-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown-content .nav-item{
+    margin-left: 5rem;
+}
+.nav-link{
+    color: var(--text-black-900);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.nav-link:hover{
+    color: var(--text-active-900);
+}
+a#active{
+    color: var(--text-active-900);
+}
+.hamburger {
     display: none;
-    cursor: pointer;
 }
-.burger div{
+.bar {
+    display: block;
     width: 25px;
     height: 3px;
-    background-color: var(--text-black-900);
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-@media screen and (max-width:1024px) {
-    .navbar .dropdown-content{
-        width: 60%;
-    }
-}
-@media screen and (max-width:768px) {
-    body{
-        overflow-x: hidden;
-    }
-    .navbar .dropdown-content{
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: var(--skin-color-nav-footer);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-    .navbar .dropdown-content li{
-        opacity: 0;
-    }
-    .burger{
-        display: block;
-    }
-}
-.nav-active{
-    transform: translateX(0%);
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
 }
 
-@keyframes dropdownContentFade{
-    from{
+@media only screen and (max-width: 768px) {
+    .dropdown-content {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: var(--skin-color-nav-footer);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .dropdown-content.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
         opacity: 0;
-        transform: translateX(50px);
     }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
-.toggle .link1{
-    transform: rotate(-45deg translate(-5px,6px));
-}
-.toggle .link2{
-    opacity: 0;
-}
-.toggle .link3{
-    transform: rotate(45deg) translate(-5px,-6px);
-}
+
+
 /* Footer */
 
 .footercapsule {

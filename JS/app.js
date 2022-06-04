@@ -1,20 +1,17 @@
-const navSlide = ()=>{
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.dropdown-content');
-    const dropdownContent = document.querySelectorAll('.dropdown-content li');
-    burger,addEventListener('click',()=>{
-        // togle Nav
-        nav.classList.toggle('nav-active');
-    });
-    //Animate Links
-    dropdownContent.forEach((link, index)=>{
-        if(link.style.animation){
-            link.style.animation = ''
-        }else{
-            link.style.animation = `dropdownContentFade 0.5s ease forwards ${index / 7 + 1.5}s`;
-        }
-        // Burger Animation
-        burger.classList.toggle('toggle');
-    });
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".dropdown-content");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 }
-navSlide();
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}

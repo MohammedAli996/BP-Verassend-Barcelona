@@ -3,26 +3,28 @@ class PageLayout
 {
     public function getNavbarHead()
     {
-        echo "
-            <nav class='navbar'>
-                <div class='logo'>
-                    <img src=''>
+        echo '
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="">
                 </div>
-                <ul class='dropdown-content'>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>Reserveren</a></li>
-                    <li><a href='#'>Informatie</a></li>
-                    <li><a href='#'>Prijzen</a></li>
-                    <li><a href='#' >Log in</a></li>
+                <ul class="dropdown-content">
+                    <li class="nav-item"><a href="#" class="nav-link" id="active">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Reserveren</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Informatie</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Prijzen</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Log in</a></li>
                 </ul>
-                <div class='burger'>
-                    <div class='line1'></div>
-                    <div class='line2'></div>
-                    <div class='line3'></div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
             </nav>
-            <script src='./JS/app.js'></script>
-        ";
+            <script src="./JS/app.js"></script>
+        </header>
+        ';
     }
     public function getNavbarFoot()
     {
