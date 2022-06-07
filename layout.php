@@ -36,8 +36,8 @@ class PageLayout
             <div class='textfooter'>
                 <h1 class='fietsenhuren'>fietsenhuren</h1>
                 <ul class='fietsen-soort'>
-                    <li>fietsen</li>
-                    <li>fietstours</li>
+                    <li>Fiets-tours</li>
+                    <li>Fiets-verhuur</li>
                 </ul>
             </div>
             <div class='textfooter'>

@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <!----css link viewport----->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!----css link homepage----->
+    <!----css link nav-footer homepage----->
     <link rel="stylesheet" href="./css/nav-footer.css" />
+    <!----css link homepage----->
+    <link rel="stylesheet" href="./css/homepage.css" />
     <!----css link skin color----->
     <link rel="stylesheet" href="./skin/color-1.css">
     <!--font awesome -->
@@ -22,10 +24,26 @@
     <!-- navigation menu start  -->
     <?php
             $layout->getNavbarHead("");
-        ?>
+    ?>
     <!-- navigation menu end  -->
+    <!--artical start-->
+    <div class="startcontainer">
+        <div class="container">
+            <!--Fiets-tours start-->
+            <h1 class="containertitle">Fiets-tours</h1>
+            <img src="./photo/fiets1.jpg" />
+        </div>
+        <!--Fiets-tours end-->
+        <!--Fiets-verhuur start-->
+        <div class="containerA">
+            <h1 class="containertitle">Fiets-verhuur</h1>
+            <img src="./photo/fiets2.jpg" />
+        </div>
+        <!--Fiets-verhuur end-->
+    </div>
+    <!--artical end-->
     <!-- Footer Contact start -->
-    <?php
+        <?php
             $layout->getNavbarFoot("");
         ?>
     <!-- Footer Contact end -->

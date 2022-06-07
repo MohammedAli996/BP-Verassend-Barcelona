@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+/*---- css variable ----*/
+:root{
+    --text-black-900: #000000;
+}
+.startcontainer
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.containertitle{
+    color: var(--text-black-900);
+    margin-top: 15px;
+}
+.container, .containerA{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--skin-color-nav-footer);
+    margin-top: 15px;
+    max-width: 800px;
+    max-height: 750px;
+    min-width: 375px, 468px;
+    border-radius: 12px;
+    margin-left: 10px;
+}
+.container:hover, .containerA:hover{
+    border: solid 10px;
+    color: var(--skin-color-stoke);
+}
+.container img, .containerA img{
+    width: 100%;
+    height: 100%;
+    padding: 10px 50px 50px 50px;
+}
+.containerA img{
+    width: 100%;
+    height: 100%;
+    padding: 10px 70px 70px 70px;
+}
