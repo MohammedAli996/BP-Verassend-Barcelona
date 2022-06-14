@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;500&family=Montserrat:wght@100&display=swap');
+.fitshoor{
+    font-family: 'Cairo', sans-serif;
+font-family: 'Montserrat', sans-serif;
+}
+.fietshuur h1{
+    font-size: 30px;
+    text-align:center;
+} 
+.fietshuur p{
+    font-size: 20px;
+}
