@@ -10,9 +10,9 @@ class PageLayout
                 <a href="index.php"><img src="./photo/logo.ico" style="text-align: left"></a>
                 </div>
                 <ul class="dropdown-content">
-                    <li class="nav-item"><a href="#" class="nav-link" id="active">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="reservatie.php" class="nav-link">Reserveren</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Informatie</a></li>
+                    <li class="nav-item"><a href="info.php" class="nav-link">Informatie</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Prijzen</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Log in</a></li>
                 </ul>
@@ -29,9 +29,9 @@ class PageLayout
     public function getNavbarFoot()
     {
         echo "
-        <nav class='footercapsule'>
+        <footer class='footercapsule'>
             <div class='footerlogo'>
-                <img class='logofooter' src='' >
+            <a href='index.php'><img src='./photo/logo.ico'></a>
             </div>
             <div class='textfooter'>
                 <h1 class='fietsenhuren'>fietsenhuren</h1>
@@ -49,12 +49,19 @@ class PageLayout
                     <li>Straatnaam:  Avda. Generalísimo 19.</li>
                 </ul>
             </div>
-            <div class='social-links'>
-                <a href=''><i class='fa fa-facebook-official'style='font-size:48px'></i></a>
-                <a href=''><i class='fa fa-instagram'style='font-size:48px'></i></a>
-                <a href=''><i class='fa fa-whatsapp'style='font-size:48px'></i></a>
+            <div class='icons'>
+                <a href='#' class='icon icon--instagram'>
+                    <i class='ri-instagram-line'></i>
+                </a>
+                <a href='#' class='icon icon--facebook'>
+                    <i class='ri-facebook-line'></i>
+                </a>
+                <a href='#' class='icon icon--whatsapp'>
+                    <i class='ri-whatsapp-line'></i>
+                </a>
             </div>
-        </nav>
+            <br>
+        </footer>
         ";
     }
 }

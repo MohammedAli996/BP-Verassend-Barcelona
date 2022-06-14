@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="./css/homepage.css" />
     <!----css link skin color----->
     <link rel="stylesheet" href="./skin/color-1.css">
-    <!--font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font icons pulled from remix icon CDN (Content delivery network) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>Verassend Barcelona</title>
     <?php
             require_once 'layout.php';
@@ -43,7 +43,7 @@
     </div>
     <!--artical end-->
     <!-- Footer Contact start -->
-        <?php
+    <?php
             $layout->getNavbarFoot("");
         ?>
     <!-- Footer Contact end -->
