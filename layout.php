@@ -7,11 +7,11 @@ class PageLayout
         <header>
             <nav class="navbar">
                 <div class="logo">
-                    <img src="">
+                <a href="index.php"><img src="./photo/logo.ico" style="text-align: left"></a>
                 </div>
                 <ul class="dropdown-content">
                     <li class="nav-item"><a href="#" class="nav-link" id="active">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Reserveren</a></li>
+                    <li class="nav-item"><a href="reservatie.php" class="nav-link">Reserveren</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Informatie</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Prijzen</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Log in</a></li>
@@ -43,10 +43,10 @@ class PageLayout
             <div class='textfooter'>
                 <h1 class='Contact'>contact</h1>
                 <ul class='Contact-footer'>
-                    <li>openingstijden:</li>
-                    <li>tel:</li>
-                    <li>e-mail:</li>
-                    <li>postcode:</li>
+                    <li>openingstijden: Ma-Zo: 08:00-21:00.</li>
+                    <li>tel: +346555254</li>
+                    <li>e-mail: contact@VerassendBarcelona.com.</li>
+                    <li>Straatnaam:  Avda. Generalísimo 19.</li>
                 </ul>
             </div>
             <div class='social-links'>

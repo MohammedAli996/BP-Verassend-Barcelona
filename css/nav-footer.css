@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Ubuntu:wght@400;500&display=swap');
 /*---- css variable ----*/
 :root{
     --text-black-900: #000000;
@@ -13,7 +13,7 @@
 }
 html{
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+
 }
 body{
     background-color: var(--skin-color-body);
@@ -38,6 +38,12 @@ a {
     padding: 2rem 1.5rem;
     background-color: var(--skin-color-nav-footer);
 }
+.logo{
+    text-align: left;
+}
+.logo img{
+    max-width: 45%;
+}
 .dropdown-content{
     display: flex;
     justify-content: space-between;
@@ -59,6 +65,7 @@ a#active{
 }
 .hamburger {
     display: none;
+    margin-left: 50rem;
 }
 .bar {
     display: block;
@@ -134,14 +141,14 @@ a#active{
 .textfooter .fietsen-soort li {
     margin-left: 16px;
     text-transform: capitalize;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 .textfooter .Contact-footer {
     text-decoration: none;
     color: var(--text-black-900);
     
 }
-.textfooter .Contact-footer li {
+.Contact-footer li {
     margin-left: 16px;
     text-transform: capitalize;
     font-size: 1.8rem;
