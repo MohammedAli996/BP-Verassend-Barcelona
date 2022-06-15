@@ -2,13 +2,12 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="./css/login.css">;
     <meta charset="UTF-8">
     <!----css link viewport----->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!----css link nav-footer homepage----->
     <link rel="stylesheet" href="./css/nav-footer.css" />
-    <!----css link info----->
-    <link rel="stylesheet" href="./css/info.css" />
     <!----css link skin color----->
     <link rel="stylesheet" href="./skin/color-1.css">
     <!-- Font icons pulled from remix icon CDN (Content delivery network) -->
@@ -26,14 +25,21 @@
             $layout->getNavbarHead("");
         ?>
     <!-- navigation menu end  -->
-    <div id="main">
+
+
+    <div class="input-home">
         <h1>Login</h1>
-        <form method="POST">
-            Username <input type="text" name="username" class="text" autocomplete="off" required>
-            Password <input type="password" name="password" class="text" required>
-            <input type="submit" name="submit" id="sub">
-        </form>
+        
+        <div class="input-group">
+    <input type="text" id="name" required class="input">
+    <label for="name" class="input-label">Username</label>
+  </div>
+    <div class="input-group2">
+        <input type="text" id="Password" required class="input">
+        <label for="name" class="input-label">Password</label>
     </div>
+    </div>  
+    
     <!-- Footer Contact start -->
     <?php
             $layout->getNavbarFoot("");

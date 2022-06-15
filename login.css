@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+
+
+
+/* ======================== */
+.input-home{
+    background-color: var(--skin-color-nav-footer);
+}
+
+.input-group {
+    position: relative;
+    margin-left: 40%;
+    margin-top: 1%;
+    background-color: var(--skin-color-nav-footer);
+}
+
+.input-group2{
+    position: relative;
+    margin-left: 40%;
+    margin-top: 2%;
+    background-color: var(--skin-color-nav-footer);
+}
+.input {
+    padding: 20px;
+    border: 15px;
+    border-radius: 20px;
+    font: inherit;
+    color: #fff;
+    background-color: transparent;
+    outline: 2px solid #fff;
+}
+
+.input-label {
+    top: -25%;
+    position: absolute;
+    margin-top: 1%;
+    left: 0;
+    transform: translate(10px, 10px);
+    transform-origin: left;
+    transition: transform .25s;
+}
+
+.input:focus~.input-label,
+.input:valid~.input-label {
+    transform: translate(0, -30px) scale(.8);
+    color: black;
+}
+
+.input:is(:focus, :valid) {
+    outline-color: black;
+}
