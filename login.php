@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="./css/login.css">;
+    <link rel="stylesheet" href="./css/login.css">
     <meta charset="UTF-8">
     <!----css link viewport----->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,20 +26,27 @@
         ?>
     <!-- navigation menu end  -->
 
-
-    <div class="input-home">
-        <h1>Login</h1>
-        
-        <div class="input-group">
-    <input type="text" id="name" required class="input">
-    <label for="name" class="input-label">Username</label>
-  </div>
-    <div class="input-group2">
-        <input type="text" id="Password" required class="input">
-        <label for="name" class="input-label">Password</label>
-    </div>
-    </div>  
     
+    <div class="center">
+      <h1>Login</h1>
+      <form method="post">
+        <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" required>
+          <span></span>
+          <label>Password</label>
+        </div>
+        <div class="pass">Forgot Password?</div>
+        <input type="submit" value="Login">
+        <div class="signup_link">
+          Not a member? <a href="#">Signup</a>
+        </div>
+      </form>
+    </div>
     <!-- Footer Contact start -->
     <?php
             $layout->getNavbarFoot("");
