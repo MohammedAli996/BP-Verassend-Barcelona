@@ -36,14 +36,20 @@ class PageLayout
             <div class='textfooter'>
                 <h1 class='fietsenhuren'>fietsenhuren</h1>
                 <ul class='fietsen-soort'>
+                </br>
+                <a href='reservatie.php'>
                     <li>Fiets-tours</li>
+                </a>
+                </br>
+                <a href='reservatie.php'>
                     <li>Fiets-verhuur</li>
+                </a>
                 </ul>
             </div>
             <div class='textfooter'>
                 <h1 class='Contact'>contact</h1>
                 <ul class='Contact-footer'>
-                    <li>openingstijden: Ma-Zo: 08:00-21:00.</li>
+                    <li>openingstijden: Ma-Zo: 08:00-18:00.</li>
                     <li>tel: +346555254</li>
                     <li>e-mail: contact@VerassendBarcelona.com.</li>
                     <li>Straatnaam:  Avda. Generalísimo 19.</li>

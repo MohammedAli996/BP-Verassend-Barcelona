@@ -30,14 +30,18 @@
     <div class="startcontainer">
         <div class="container">
             <!--Fiets-tours start-->
-            <h1 class="containertitle">Fiets-tours</h1>
-            <img src="./photo/fiets1.jpg" />
+            <a href="reservatie.php">
+                <h1 class=" containertitle">Fiets-tours</h1>
+                <img src="./photo/fiets1.jpg" />
+            </a>
         </div>
         <!--Fiets-tours end-->
         <!--Fiets-verhuur start-->
         <div class="containerA">
-            <h1 class="containertitle">Fiets-verhuur</h1>
-            <img src="./photo/fiets2.jpg" />
+            <a href="reservatie.php">
+                <h1 class="containertitle">Fiets-verhuur</h1>
+                <img src="./photo/fiets2.jpg" />
+            </a>
         </div>
         <!--Fiets-verhuur end-->
     </div>
