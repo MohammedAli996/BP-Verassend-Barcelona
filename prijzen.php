@@ -48,7 +48,6 @@
             <label for="tabsilver">fietshuren</label>
             <div class="tab">
                 <h2>Barcelona fietshuren</h2>
-<<<<<<< HEAD
                 <p>
                     * Duur: 2.5 uur(Andere tijdstippen en duur mogelijk in overleg).<br />
                     * Fietstour start elke dag om 08:00 en 18:00.<br />
@@ -59,16 +58,6 @@
                     * (Prijs is per persoon, Inclusief fiets)<br />
                 <p> € 15,- per persoon</p>
                 </p>
-=======
-                <p1>
-                    <ul>*Naast de fietsen voor de tour bieden wij ook losse fietsen aan.<br> Momenteel hebben wij maar 1
-                        type fiets.</ul>
-                    <ul></ul>
-                    <ul>* € 15,- per persoon</ul>
-                    <br />
-                    <p>Alle prijzen zijn inclusief btw</p>
-                </p1>
->>>>>>> 0ac293423c5af08c5c1ccbd43f1900eb8d11e336
             </div>
         </div>
     </div>
