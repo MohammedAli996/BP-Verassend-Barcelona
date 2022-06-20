@@ -1,6 +1,10 @@
 :root{
     --text-black-900: #000000;
 }
+.fietsverhuur{
+    justify-content: center;
+    display: flex;
+}
 .reserveren {
     margin: 70px;
     padding: 20px;
