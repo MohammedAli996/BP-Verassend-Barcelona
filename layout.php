@@ -13,7 +13,7 @@ class PageLayout
                     <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="reservatie.php" class="nav-link">Reserveren</a></li>
                     <li class="nav-item"><a href="info.php" class="nav-link">Informatie</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Prijzen</a></li>
+                    <li class="nav-item"><a href="prijzen.php" class="nav-link">Prijzen</a></li>
                     <li class="nav-item"><a href="login.php" class="nav-link">Log in</a></li>
                 </ul>
                 <div class="hamburger">

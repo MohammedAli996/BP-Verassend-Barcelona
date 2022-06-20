@@ -274,6 +274,13 @@
             transform: translateY(0px);
         }
     }
+
+    h3,
+    h2,
+    p {
+        color: var(--text-black-900);
+        font-size: 15px;
+    }
     </style>
     </head>
 
@@ -312,11 +319,11 @@
                 <label for="aantal" class="input-label">Aantal: </label>
             </div><br><br>
             <h2> Maak hier uw keuze! </h2><br>
-            <label class="container1">Fiets tour (T.w.v.€85,- )
+            <label class="container1">Fiets tour (T.w.v.€15,- )
                 <input type="radio" checked="checked" name="radio">
                 <span class="checkmark"></span>
             </label>
-            <label class="container1">Fiets huren (T.w.v.€45,-)
+            <label class="container1">Fiets huren (T.w.v.€10,-)
                 <input type="radio" name="radio">
                 <span class="checkmark"></span>
             </label>
@@ -331,9 +338,9 @@
             <h2>Prijzen </h2>
             <p>In verband met stijgende prijzen hanteren wij een minimum van max. 8 mensen per bestelling* </p><br><br>
             <h3>Fiets tour </h3><br>
-            <h3>€ 85,- </h3><br><br>
+            <h3>€ 15,- </h3><br><br>
             <h3> Fiets huren per stuk </h3><br><br>
-            <h3>€ 45,- <h3><br>
+            <h3>€ 10,- <h3><br>
         </div>
         <!-- Footer Contact start -->
         <?php
