@@ -28,6 +28,13 @@ p{
     color: var(--text-black-900);
     font-size: 15px;
 }
+<<<<<<< HEAD
+=======
+p1{
+    color: var(--text-black-900);
+    font-size: 15px;
+}
+>>>>>>> 0ac293423c5af08c5c1ccbd43f1900eb8d11e336
 .mytabs .tab {
     width: 100%;
     padding: 20px;
