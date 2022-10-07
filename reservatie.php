@@ -329,7 +329,7 @@
             </label>
             </form><br><br>
             <div class="text-box">
-                <a href="#" class="btn btn-white btn-        animate">Submit</a>
+                <a href="#" class="btn btn-white btn-animate">Submit</a>
             </div>
             </form>
         </div>
