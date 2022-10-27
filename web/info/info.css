@@ -1,0 +1,28 @@
+:root{
+    --text-black-900: #000000;
+}
+.fietsverhuur{
+    justify-content: center;
+    display: flex;
+}
+.reserveren {
+    margin: 70px;
+    padding: 20px;
+    width: 400px;
+    background: var(--skin-color-nav-footer);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 65px;
+    border-radius: 12px;
+}
+p1 {
+    color: var(--text-black-900);
+    font-size: 15px;
+}
+h2 {
+    font-family: cursive;
+    padding-bottom: 25px;
+    color: var(--text-black-900);
+    font-size: 20px;
+}
