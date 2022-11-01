@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="./skin/color-1.css">
     <!-- Font icons pulled from remix icon CDN (Content delivery network) -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+   
     <title>Verassend Barcelona</title>
     <?php
             require_once 'layout.php';
             $layout = new PageLayout();
+     
         ?>
 </head>
 
@@ -42,7 +44,7 @@
         border-style: solid;
         text-align: center;
         width: 700px;
-        height: 680px;
+        height: 500px;
         flex-direction: column;
         background-color: var(--skin-color-nav-footer);
         align-items: center;
@@ -156,8 +158,8 @@
 
     .input {
 
-        display: grid;
-        width: 540px;
+        display: flex;
+        width: 520px;
         grid-template-columns: 120px 120px 120px;
         align-items: start;
         justify-content: space-between;
@@ -195,7 +197,7 @@
         outline-color: black;
     }
 
-    .submit {}
+    
 
     body {
         font-family: sans-serif;
@@ -203,10 +205,11 @@
         font-weight: bold;
     }
 
-    .text-box {
+    .text-box [type="submit"]{
         margin-left: -120px;
         margin-top: 10px;
         z-index: 4;
+        cursor: pointer;
 
     }
 
@@ -221,10 +224,7 @@
         position: absolute;
     }
 
-    .btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
+   
 
     .btn:active {
         transform: translateY(-1px);
@@ -280,6 +280,7 @@
     p {
         color: var(--text-black-900);
         font-size: 15px;
+        
     }
     </style>
     </head>
@@ -293,43 +294,72 @@
             <h1>
                 Reserveer hier uw Fiets (tour)
                 <div class="inputbg">
-            </h1><br><br>
-            <div class="input-group">
-                <form action=" ">
-                    <div><input type="text" id="name" required class="input">
-                        <label for="name" class="input-label">Naam: </label>
-                    </div>
-            </div>
-            <div class="input-group2">
-                <div> <input type="text" id="name" required class="input">
-                    <label for="name" class="input-label">Adres: </label>
-                </div>
-            </div>
 
-            <div class="input-group3">
-                <input type="text" id="name" required class="input">
-                <label for="name" class="input-label">E-mail adres: </label>
+            </h1><br><br>
+
+            <div class="input-group">
+            <?php
+          // (A) PROCESS RESERVATION
+          if (isset($_POST["date"])) {
+          require "2-reserve.php";
+         if ($_RSV->save(
+         $_POST["date"], $_POST["slot"], $_POST["name"],
+         $_POST["email"], $_POST["tel"], $_POST["notes"])) {
+         echo "<div class='ok'>Reservation saved.</div>";
+         } else { echo "<div class='err'>".$_RSV->error."</div>"; }
+     }
+     ?>
+        
+         
+          
+                
+   <form id="resForm" method="post" target="_self">
+    <div class="input-group">
+   
+      <label for="res_name" class="input-label">Name</label>
+      <input type="text" required name="name" value=" " required class="input"/></div></div>
+
+     <div class="input-group2">
+      <label for="res_email" class="input-label">Email</label>
+      <input type="email" required name="email" value=" " required class="input"/></div>
+
+      <div class="input-group3">
+      <label for="res_tel" class="input-label">Telephone Number</label>
+      <input type="text" required name="tel" value=" " required class="input"/></div>
+
+      <div class="input-group4">
+      <label for="res_notes" class="input-label">Tour of Huren?</label>
+     <div> <input type="text" name="notes" value=" " required class="input"/></div>
+     <br>
+      <?php
+      // @TODO - MINIMUM DATE (TODAY)
+      // $mindate = date("Y-m-d", strtotime("+2 days"));
+      $mindate = date("Y-m-d");
+      ?>
+      <label>Reservation Datum</label>
+      <input type="date" required id="res_date" name="date"
+             min="<?=$mindate?>">
+             <br>
+
+      <label>Reservation Dagdeel</label>
+      <select name="slot">
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+      </select><br>
+      <div class="btn">
+        <br>
+
+      <input type="submit" value="Submit"/>
+      </div>
+    </form>
+  </body>
+</html>
             </div>
-            <div class="input-group4">
-                <input type="text" id="iban" required class="input">
-                <label for="iban" class="input-label">IBAN: </label>
-            </div>
-            <div class="input-group5">
-                <input type="text" id="aantal" required class="input">
-                <label for="aantal" class="input-label">Aantal: </label>
-            </div><br><br>
-            <h2> Maak hier uw keuze! </h2><br>
-            <label class="container1">Fiets tour (T.w.v.€15,- )
-                <input type="radio" checked="checked" name="radio">
-                <span class="checkmark"></span>
-            </label>
-            <label class="container1">Fiets huren (T.w.v.€10,-)
-                <input type="radio" name="radio">
-                <span class="checkmark"></span>
-            </label>
-            </form><br><br>
+        <br>
+         
             <div class="text-box">
-                <a href="#" class="btn btn-white btn-animate">Submit</a>
+         
+               
             </div>
             </form>
         </div>
